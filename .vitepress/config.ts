@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "MechaKeys",
+  base: "robolab-io.github.io",
   description: "The documentation for MechaKeys, the integrated typing environment.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
