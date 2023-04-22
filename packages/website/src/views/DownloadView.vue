@@ -4,24 +4,24 @@
             <Section class="">
                 <h1 class="mx-auto max-w-4xl text-4xl font-extrabold tracking-tight sm:text-6xl text-center">Download
                     MechaKeys</h1>
-                <p class="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-300 text-center">MechaKeys offers apps
+                <p class="mx-auto mt-6 mb-32 max-w-2xl text-lg tracking-tight text-slate-300 text-center">MechaKeys offers apps
                     for Windows, macOS, and Linux for all of your desktop devices.</p>
 
-                <div class="mx-auto mt-6 max-w-2xl flex-col justify-center sm:flex-row text-center mb-24">
+                <!-- <div class="mx-auto mt-6 max-w-2xl flex-col justify-center sm:flex-row text-center mb-24">
                     <a tabindex="0"
                         href="https://github.com/robolab-io/mechakeys-distro/releases/download/v2.3.1/MechaKeys-installer-win64.exe"
                         class="mb-2 sm:mb-0 group no-underline inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-[var(--brand)] text-white hover:opacity-80 active:opacity-60 active:text-blue-100 focus-visible:outline-[var(--borders-base1] transition mr-4">
                         <ArrowDownTrayIcon class="flex-1 w-4 h-4 mr-2" />
                         <div class="">Download for Windows</div>
                     </a>
-                </div>
+                </div> -->
 
                 <h1 class="mx-auto max-w-4xl text-3xl font-bold tracking-tight sm:text-3xl flex items-center">MechaKeys for
                     Desktop
                 </h1>
                 <p class="mx-auto mt-6 mb-8 max-w-4xl text-lg tracking-tight text-slate-300">Native apps for any operating
                     system.</p>
-                <div class="mb-16 mx-auto max-w-4xl sm:grid sm:grid-cols-3 sm:gap-x-8 flex flex-col gap-8">
+                <div class="mb-24 mx-auto max-w-4xl sm:grid sm:grid-cols-3 sm:gap-x-8 flex flex-col gap-8">
                     <a
                         href="https://github.com/robolab-io/mechakeys-distro/releases/download/v2.3.1/MechaKeys-installer-win64.exe">
                         <div
@@ -69,7 +69,7 @@
                 </h1>
                 <p class="mx-auto mt-6 mb-8 max-w-4xl text-lg tracking-tight text-slate-300">Now you can bring the fun
                     wherever you go.</p>
-                <div class="mb-16 mx-auto max-w-4xl grid grid-cols-1 gap-x-8 opacity-50 pointer-events-none select-none">
+                <div class="mb-24 mx-auto max-w-4xl grid grid-cols-1 gap-x-8 opacity-50 pointer-events-none select-none">
                     <div
                         class="relative bg-[var(--app-base2)] p-6 rounded-2xl border-solid border-[1px] border-[var(--borders-base1)] shadow-2xl max-w-[277px]">
                         <div class="w-9 h-9 flex items-center justify-center rounded-xl bg-[var(--brand)]">
