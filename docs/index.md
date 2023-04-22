@@ -3,22 +3,16 @@
 layout: home
 
 hero:
-  name: "MechaKeys API"
-  text: ""
-  tagline: The documentation for MechaKeys, the integrated typing environment.
+  name: "mechakeys"
+  text: "Documentation for the MechaKeys API"
+  tagline: My great project tagline
   actions:
     - theme: brand
-      text: Quick Start
-      link: /404
+      text: Markdown Examples
+      link: /markdown-examples
     - theme: alt
-      text: API Docs
-      link: /404
-    # - theme: brand
-    #   text: Markdown Examples
-    #   link: /markdown-examples
-    # - theme: alt
-    #   text: API Examples
-    #   link: /api-examples
+      text: API Examples
+      link: /api-examples
 
 features:
   - title: Feature A
