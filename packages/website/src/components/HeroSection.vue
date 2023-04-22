@@ -1,5 +1,5 @@
 <template>
-    <main class="pt-16 sm:pt-12">
+    <main class="">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-20 text-center lg:pt-28">
             <h1 class="mx-auto max-w-4xl text-4xl font-extrabold tracking-tight sm:text-6xl">The <span
                     class="text-[var(--brand)]">integrated</span> typing environment</h1>
