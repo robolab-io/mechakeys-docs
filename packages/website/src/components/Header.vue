@@ -1,10 +1,10 @@
 <template>
     <header class="fixed top-0 left-0 right-0 bg-[var(--app-base6T)] z-50 backdrop-blur-2xl">
-        <div class="mx-auto max-w-7xl py-8 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl pb-4 pt-4 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-8">
             <nav class="relative flex justify-between items-center">
                 <img alt="MechaKeys logo" class="logo" src="@/assets/logo.svg" width="32" height="32" />
 
-                <div class="flex gap-4 items-center">
+                <div class="gap-4 items-center hidden sm:flex">
                     <a tabindex="0"
                         href="https://github.com/robolab-io/mechakeys-distro/releases/download/v2.3.1/MechaKeys-installer-win64.exe"
                         noreferrer nofollow target="_blank"
