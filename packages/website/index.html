@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <link rel="icon" href="./favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MechaKeys is your ultimate desktop customization tool. A mouse and keyboard sound simulator, live wallpapers and overlays, and so much more in an all-in-one app.">
     <title>MechaKeys</title>
   </head>
   <body>
     <div id="app"></div>
+    <script>!function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&true)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}if(e==='light'||e==='dark')d.style.colorScheme=e}catch(e){}}()</script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
