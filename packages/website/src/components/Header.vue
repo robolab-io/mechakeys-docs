@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-[var(--app-base6T)] z-50 backdrop-blur-2xl">
+    <header class="">
         <div class="mx-auto max-w-7xl pb-4 pt-4 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-8">
             <nav class="relative flex justify-between items-center">
                 <RouterLink to="/">
@@ -7,12 +7,10 @@
                 </RouterLink>
 
                 <div class="gap-4 items-center hidden sm:flex">
-                    <a tabindex="0"
-                        href="https://github.com/robolab-io/mechakeys-distro/releases/download/v2.3.1/MechaKeys-installer-win64.exe"
-                        noreferrer nofollow target="_blank"
+                    <RouterLink to="/download" tabindex="0"
                         class="group no-underline inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-[var(--brand)] text-white hover:opacity-80 active:opacity-60 active:text-blue-100 focus-visible:outline-blue-600 transition mr-4">
                         <span>Download</span>
-                    </a>
+                    </RouterLink>
 
                     <a class="flex justify-center items-center w-9 h-9 text-[var(--app-fore11)]"
                         href="https://github.com/robolab-io/mechakeys-app" aria-label="github" target="_blank"
