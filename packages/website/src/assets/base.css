@@ -4,6 +4,7 @@
 @tailwind utilities;
 
 :root {
+  --transparent: transparent;
   --brand: #f85077;
 
   --colors-blue: hsl(213, 96%, 56%);
@@ -134,7 +135,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, d
   font-weight: normal;
 }
 
-html, body {
+html, body, #app {
   font-family: 'Karla', sans-serif;
   background: var(--app-base6);
   color: var(--app-fore11);

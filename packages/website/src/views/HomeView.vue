@@ -233,3 +233,9 @@ import HD from '@/components/HeadingDescription.vue'
 
 import { AdjustmentsVerticalIcon, PhotoIcon, CodeBracketSquareIcon, ComputerDesktopIcon, SparklesIcon } from '@heroicons/vue/24/outline'
 </script>
+
+<style>
+#testimonial {
+  background: radial-gradient(ellipse 100% 60% at 50% 50%,rgba(247, 36, 166, 0.07),var(--transparent))
+}
+</style>
