@@ -55,7 +55,7 @@
     </Section>
   </section>
 
-  <section id="testimonial" class="py-20 sm:py-32" aria-label="Description of the features in MechaKeys">
+  <section id="testimonial" class="py-20 sm:py-32" aria-label="User testimonials for MechaKeys">
     <Section>
       <HD>
         <template #heading>
@@ -194,6 +194,33 @@
           </ul>
         </li>
       </ul>
+    </Section>
+  </section>
+
+  <section id="download" class="py-20 sm:py-32" aria-label="Download section for MechaKeys">
+    <Section>
+      <HD>
+        <template #heading>
+          Download MechaKeys
+        </template>
+        <template #description>
+          <a tabindex="0"
+            href="https://github.com/robolab-io/mechakeys-distro/releases/download/v2.3.1/MechaKeys-installer-win64.exe"
+            noreferrer nofollow target="_blank"
+            class="mt-2 sm:mb-0 group no-underline inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-[var(--brand)] text-white hover:opacity-80 active:opacity-60 active:text-blue-100 focus-visible:outline-[var(--borders-base1] transition mr-4">
+            <ComputerDesktopIcon class="flex-1 w-4 h-4 mr-2" />
+            <div class="">Windows Download</div>
+          </a>
+
+          <a tabindex="0"
+            href="https://github.com/robolab-io/mechakeys-distro/"
+            noreferrer nofollow target="_blank"
+            class="group no-underline inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-[var(--app-base4)] text-white hover:opacity-80 active:opacity-60 active:text-blue-100 focus-visible:outline-[var(--borders-base1] transition mr-4">
+            <SparklesIcon class="flex-1 w-4 h-4 mr-2" />
+            <div class="">Other Platforms</div>
+        </a>
+        </template>
+      </HD>
 
     </Section>
   </section>
@@ -204,5 +231,5 @@ import Hero from '@/components/HeroSection.vue'
 import Section from '@/components/LandingSection.vue'
 import HD from '@/components/HeadingDescription.vue'
 
-import { AdjustmentsVerticalIcon, PhotoIcon, CodeBracketSquareIcon } from '@heroicons/vue/24/outline'
+import { AdjustmentsVerticalIcon, PhotoIcon, CodeBracketSquareIcon, ComputerDesktopIcon, SparklesIcon } from '@heroicons/vue/24/outline'
 </script>
