@@ -24,7 +24,7 @@
             <p class="mt-2 text-xl font-medium text-slate-100">Play your way with the best sound simulator available.</p>
             <p class="mt-4 text-sm text-slate-300">With separate volumes for mouse and keyboard sounds, options for stereo
               spread, panning, and a community storefront. <span
-                class="ml-1 text-xs rounded-full bg-[var(--app-fore4)] px-1 uppercase font-bold text-white">Soon</span>
+                class="ml-1 text-xs rounded-full bg-[var(--app-fore4)] px-1 uppercase font-bold text-white">Soon™️</span>
             </p>
           </div>
 

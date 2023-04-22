@@ -20,7 +20,7 @@
                     noreferrer nofollow target="_blank"
                     class="group no-underline inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-[var(--app-base4)] text-white hover:opacity-80 active:opacity-60 active:text-blue-100 focus-visible:outline-[var(--borders-base1] transition mr-4">
                     <CodeBracketIcon class="flex-1 w-4 h-4 mr-2" />
-                    <div class="">Developer Documentation<span class="ml-2 text-xs rounded-full bg-[var(--app-fore4)] px-2 py-1 uppercase font-bold text-white">Soon</span></div>
+                    <div class="">Developer Documentation<span class="ml-2 text-xs rounded-full bg-[var(--app-fore4)] px-2 py-1 uppercase font-bold text-white">Soon™️</span></div>
                 </a>
             </div>
         </div>
