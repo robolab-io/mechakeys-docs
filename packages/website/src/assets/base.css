@@ -1,53 +1,128 @@
-/* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
+  --brand: #f85077;
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
+  --colors-blue: hsl(213, 96%, 56%);
+  --colors-blue10: hsla(213, 96%, 56%, 0.1);
+  --colors-blue25: hsla(213, 96%, 56%, 0.25);
+  --colors-blue50: hsla(213, 96%, 56%, 0.5);
 
-  --vt-c-indigo: #2c3e50;
+  --colors-green: hsl(158, 97%, 38%);
+  --colors-green10: hsla(158, 97%, 38%, 0.1);
+  --colors-green25: hsla(158, 97%, 38%, 0.25);
+  --colors-green50: hsla(158, 97%, 38%, 0.5);
+  --colors-green90: hsla(158, 97%, 38%, 0.9);
 
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+  --colors-orange: hsl(25, 100%, 59%);
+  --colors-orange50: hsla(25, 100%, 59%, 0.5);
 
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --colors-pink: hsl(349, 100%, 70%);
+  --colors-pink50: hsla(349, 100%, 70%, 0.4);
+  --colors-pink25: hsla(349, 100%, 70%, 0.25);
+
+  --colors-purple: hsl(258, 99%, 70%);
+  --colors-purple50: hsla(258, 99%, 70%, 0.5);
+
+  --colors-red: hsl(359, 95%, 66%);
+  --colors-red50: hsla(359, 95%, 66%, 0.5);
+
+  --colors-yellow: hsla(51.7, 100%, 50%, 1);
+  --colors-yellow50: hsla(51.7, 100%, 50%, 0.5);
+
+  --colors-black: hsl(227, 6%, 17%);
+  --colors-gray: hsl(227, 7%, 24%);
+  --colors-white: hsl(115, 100%, 100%);
+  --colors-white80: hsla(115, 100%, 100%, 0.8);
+
+  --colors-blueWash: hsla(213, 70%, 35%, 0.24);
+  --colors-blueWashDark: hsla(213, 70%, 35%, 0.18);
+
+  --colors-fakeTransparent: rgba(1, 1, 1, 0);
+  --colors-greenWash: hsla(158, 70%, 34%, 0.16);
+  --colors-greenWashDark: hsla(158, 70%, 34%, 0.13);
+
+  --colors-orangeWash: hsla(21, 70%, 35%, 0.24);
+  --colors-orangeWashDark: hsla(21, 70%, 35%, 0.18);
+
+  --colors-pinkTrans: hsl(349, 100%, 70%, 0.25);
+  --colors-pinkUmbra: hsl(349, 89%, 65%);
+  --colors-pinkWash: hsla(340, 70%, 42%, 0.2);
+  --colors-pinkWashDark: hsla(340, 70%, 42%, 0.16);
+
+  --colors-purpleUmbra: hsl(258, 90%, 65%);
+  --colors-purpleWash: hsla(261, 70%, 60%, 0.16);
+  --colors-purpleWashDark: hsla(261, 70%, 60%, 0.13);
+
+  --colors-redUmbra: hsl(359, 83%, 60%);
+  --colors-redWash: hsla(1, 70%, 35%, 0.24);
+  --colors-redWashDark: hsla(1, 70%, 35%, 0.18);
+  
+  --colors-yellowTrans50: hsla(54, 96%, 67%, 0.35);
+  --colors-yellowTrans: hsla(54, 100%, 86%, 0.11);
+  --colors-yellowTransDark: hsla(58, 100%, 80%, 0.14);
+  --colors-yellowUmbra: hsla(51.7, 100%, 46%, 1);
+  --colors-yellowWash: hsla(52, 70%, 35%, 0.24);
+  --colors-yellowWashDark: hsla(52, 70%, 35%, 0.18);
+
+  --app-base1: hsl(220, 11%, 5.5%);
+  --app-base2: hsl(220, 12%, 6.5%);
+  --app-base2T: hsla(220, 12%, 8%, 0.7);
+  --app-base3T: hsla(220, 9%, 60%, 0.1);
+  --app-base3: hsl(220, 10%, 13%);
+  --app-base4: hsl(220, 11%, 15%);
+  --app-base4T: hsla(220, 9%, 30%, 0.33);
+  --app-base5: hsl(220, 11%, 12%);
+  --app-base5T: hsla(220, 13%, 60%, 0.15);
+  --app-base6: hsl(220, 13%, 4%);
+  --app-base6T: hsla(220, 13%, 4%, 0.7);
+
+  --app-baseContrast: hsl(270, 3%, 75%);
+
+  --app-fore11: hsl(220, 3%, 95%);
+  --app-fore10: hsl(220, 3%, 75%);
+  --app-fore9: hsl(220, 3%, 69%);
+  --app-fore9Hex: #aeafb2;
+  --app-fore2: hsla(220, 20%, 83%, 0.15);
+  --app-fore3: hsl(220, 3%, 20%);
+  --app-fore4: hsl(220, 3%, 20%);
+  --app-fore3T: hsla(220, 20%, 83%, 0.19);
+  --app-fore4T: hsla(220, 26%, 89%, 0.31);
+  --app-fore5T: hsla(220, 26%, 89%, 0.31);
+  --app-fore6: hsl(220, 3%, 45%);
+  --app-fore5: hsl(220, 3%, 45%);
+  --app-fore6T: hsla(220, 3%, 80%, 0.5);
+  --app-fore8: hsl(220, 3%, 55%);
+
+  --app-foreContrast: hsl(220, 11%, 10%);
+
+  --borders-base1: hsl(220, 9%, 14%);
+  --borders-base2: hsl(220, 9%, 20%);
+  --borders-base3: hsl(220, 9%, 28%);
+
+  --shadows-menuShadow: 0px 8px 25px hsla(220, 5%, 0%, 0.45);
+  --shadows-modalShadow: 0px 16px 34px hsla(220, 4%, 0%, 0.65);
+
+  --shadows-sidebarShadow: 0px 0px 30px hsl(220, 5%, 0%);
+
+  --app-neutralDrop: hsla(220, 6%, 9%, 0.9);
+  --app-backdrop: hsla(220, 5%, 6%, 0.4);
+  --app-backdropUmbra: hsla(220, 7%, 4%, 0.85);
+  --app-backdropUmbraSolid: hsl(229, 5%, 4%);
 }
 
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
-
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
-
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
-
-  --section-gap: 160px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 *,
@@ -59,15 +134,19 @@
   font-weight: normal;
 }
 
+html, body {
+  font-family: 'Karla', sans-serif;
+  background: var(--app-base6);
+  color: var(--app-fore11);
+
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
-  transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
