@@ -1,11 +1,8 @@
 {
+  "name": "@mechakeys/website",
+  "type": "module",
   "workspaces": [
     "packages/*",
     "docs/*"
-  ],
-  "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
-  }
+  ]
 }
