@@ -263,4 +263,9 @@ import { AdjustmentsVerticalIcon, PhotoIcon, CodeBracketSquareIcon, ComputerDesk
 <style>
 #testimonial {
   background: radial-gradient(ellipse 100% 60% at 50% 50%, rgba(247, 36, 166, 0.07), var(--transparent))
-}</style>
+}
+
+#features {
+  background: radial-gradient(ellipse 100% 60% at 50% 50%, rgba(187, 36, 247, 0.07), var(--transparent))
+}
+</style>

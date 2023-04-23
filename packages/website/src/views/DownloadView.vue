@@ -1,6 +1,6 @@
 <template>
     <main>
-        <section id="download" class="py-20 sm:py-[142px]" aria-label="Download section for MechaKeys">
+        <section id="download-page" class="py-20 sm:py-[142px]" aria-label="Download section for MechaKeys">
             <Section class="">
                 <h1 class="mx-auto max-w-4xl text-4xl font-extrabold tracking-tight sm:text-6xl text-center">Download
                     MechaKeys</h1>
@@ -112,7 +112,7 @@ import { ArrowDownTrayIcon, DevicePhoneMobileIcon, ComputerDesktopIcon } from '@
 </script>
 
 <style>
-#download {
+#download-page {
     background: radial-gradient(ellipse 100% 60% at 50% 50%, rgba(247, 36, 166, 0.07), var(--transparent))
 }
 </style>
