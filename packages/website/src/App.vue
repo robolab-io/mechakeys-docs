@@ -33,15 +33,15 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 .lobbyVideo {
-  position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
     opacity: .08;
     object-fit: cover;
     mix-blend-mode: lighten;
     z-index: 0;
+    pointer-events: none;
+    user-select: none;
 }
 </style>

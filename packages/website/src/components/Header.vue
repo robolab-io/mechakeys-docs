@@ -1,19 +1,19 @@
 <template>
     <header class="">
-        <div class="mx-auto max-w-7xl pb-4 pt-4 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl py-8 lg:py-10 px-8 sm:px-10 lg:px-12">
             <nav class="relative flex justify-between items-center">
-                <RouterLink class="flex" to="/">
+                <RouterLink class="flex items-center" to="/">
                     <img alt="MechaKeys logo" class="logo" src="@/assets/logo.svg" width="32" height="32" />
-                    <div class="ml-2 mt-auto mb-1 hidden sm:block font-bold text-xs">by robolab.io</div>
+                    <div class="ml-4 mt-1 hidden sm:block font-bold text-sm">by robolab.io</div>
                 </RouterLink>
 
-                <div class="gap-4 items-center hidden sm:flex">
+                <div class="gap-4 items-center flex">
                     <RouterLink to="/download" tabindex="0"
-                        class="group no-underline inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-[var(--brand)] text-white hover:opacity-80 active:opacity-60 active:text-blue-100 focus-visible:outline-blue-600 transition mr-4">
+                        class="group no-underline inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-[var(--brand)] text-white hover:opacity-80 active:opacity-60 active:text-blue-100 focus-visible:outline-blue-600 transition sm:mr-4">
                         <span>Download</span>
                     </RouterLink>
 
-                    <a class="flex justify-center items-center w-9 h-9 text-[var(--app-fore11)]"
+                    <a class="justify-center items-center w-9 h-9 text-[var(--app-fore11)] hidden sm:flex"
                         href="https://github.com/robolab-io/mechakeys-app" aria-label="github" target="_blank"
                         rel="noopener"><svg class="w-6 h-6 fill-current" role="img" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -23,7 +23,7 @@
                             </path>
                     </svg></a>
 
-                    <a class="flex justify-center items-center w-9 h-9 text-[var(--app-fore11)]"
+                    <a class="justify-center items-center w-9 h-9 text-[var(--app-fore11)]  hidden sm:flex"
                         href="https://discord.robolab.io" aria-label="github" target="_blank" rel="noopener"><svg
                             class="w-6 h-6 fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <title>Discord</title>

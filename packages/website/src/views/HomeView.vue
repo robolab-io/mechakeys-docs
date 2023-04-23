@@ -14,8 +14,8 @@
           </template>
         </HD>
 
-        <div class="hidden lg:mt-20 lg:block">
-          <div class="grid grid-cols-3 gap-x-8">
+        <div class="mt-20">
+          <div class="sm:grid sm:grid-cols-3 sm:gap-x-8 flex flex-col gap-8">
             <div
               class="relative bg-[var(--app-base2)] p-6 rounded-2xl border-solid border-[1px] border-[var(--borders-base1)] shadow-2xl">
               <div class="w-9 h-9 flex items-center justify-center rounded-xl bg-[var(--brand)]">
