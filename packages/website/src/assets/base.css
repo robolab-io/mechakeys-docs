@@ -135,7 +135,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, d
   font-weight: normal;
 }
 
-html, body, #app {
+html, body {
   font-family: 'Karla', sans-serif;
   background: var(--app-base6);
   color: var(--app-fore11);
