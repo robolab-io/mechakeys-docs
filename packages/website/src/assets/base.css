@@ -70,7 +70,7 @@
   --colors-yellowWashDark: hsla(52, 70%, 35%, 0.18);
 
   --app-base1: hsl(220, 11%, 5.5%);
-  --app-base2: hsl(220, 12%, 6.5%);
+  --app-base2: hsla(220, 12%, 6.5%, 0.8);
   --app-base2T: hsla(220, 12%, 8%, 0.7);
   --app-base3T: hsla(220, 9%, 60%, 0.1);
   --app-base3: hsl(220, 10%, 13%);

@@ -2,8 +2,9 @@
     <header class="">
         <div class="mx-auto max-w-7xl pb-4 pt-4 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-8">
             <nav class="relative flex justify-between items-center">
-                <RouterLink to="/">
+                <RouterLink class="flex" to="/">
                     <img alt="MechaKeys logo" class="logo" src="@/assets/logo.svg" width="32" height="32" />
+                    <div class="ml-2 mt-auto mb-1 hidden sm:block font-bold text-xs">by robolab.io</div>
                 </RouterLink>
 
                 <div class="gap-4 items-center hidden sm:flex">

@@ -1,4 +1,5 @@
 <template>
+  <video class="lobbyVideo" src="https://s3.amazonaws.com/labs.robolab.io/drive/ui/ppbg_s.mp4" autoplay muted loop></video>
   <Header />
   <RouterView v-slot="{ Component }">
     <transition name="slide-fade" mode="out-in">
@@ -29,5 +30,18 @@ import { RouterLink, RouterView } from 'vue-router'
   /* transform: translateY(20px) scale(0.9); */
   transform: translateY(8px);
   opacity: 0;
+}
+
+.lobbyVideo {
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    opacity: .08;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+    z-index: 0;
 }
 </style>
