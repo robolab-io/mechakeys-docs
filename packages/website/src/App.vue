@@ -1,6 +1,10 @@
 <template>
   <Header />
-  <RouterView />
+  <RouterView v-slot="{ Component }">
+    <transition name="slide-fade" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </RouterView>
   <Footer />
 </template>
 
@@ -11,4 +15,19 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 
-<style scoped></style>
+<style scoped>
+.slide-fade-enter-active {
+  transition: all 0.22s cubic-bezier(0,.99,.34,1)
+}
+
+.slide-fade-leave-active {
+  transition: all 0.22s cubic-bezier(0,.99,.34,1)
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  /* transform: translateY(20px) scale(0.9); */
+  transform: translateY(8px);
+  opacity: 0;
+}
+</style>
