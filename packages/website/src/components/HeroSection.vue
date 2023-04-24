@@ -35,9 +35,9 @@
                     <div class="mx-auto max-w-4xl overflow-hidden rounded-xl bg-[var(--app-base6)] aspect-[1260/814]"
                         style="animation-duration: 7s; animation-iteration-count: infinite; animation-timing-function: ease-in-out;">
                         <div class="w-full h-full absolute inset-0 z-10 mix-blend-luminosity">
-                            <video class="object-fill opacity-[0.08] mix-blend-luminosity w-full h-full"
+                            <!-- <video class="object-fill opacity-[0.08] mix-blend-luminosity w-full h-full"
                                 src="https://s3.amazonaws.com/labs.robolab.io/drive/ui/ppbg_s.mp4" autoplay muted
-                                loop></video>
+                                loop></video> -->
                         </div>
                         <img decoding="async" loading="lazy" src="https://i.imgur.com/MV9kO1R.png"
                             class="absolute inset-0 w-full h-full object-fit scale-[1.005]">
