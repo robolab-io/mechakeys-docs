@@ -13,8 +13,9 @@
             whether it was successful and how it was accessed.
             In the event where the Terms of Service is breached, Robolab may store your IP address for security and
             authenticity purposes only.
-            Robolab does not use cookies, third-party analytics, advertising systems, or similar tracking technologies on
+            Robolab does not use cookies, analytics, advertising systems, or similar tracking technologies from third parties on
             our websites and services.
+            For this website, we use first-party analytics for the sole purpose of measuring advertising effectiveness. These analytics do not collect nor store personally identifying information. We cannot reasonably correlate any request to an individual user or account. Analytics data is discarded after 24 hours.
             When paying for premium products on our services, Robolab does not receive nor store your payment information.
             This information is entirely handled by Stripe or PayPal, and their respective privacy policies apply.
             Data and information is processed in the United States. All users of our services have the same rights regarding
