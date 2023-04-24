@@ -6,6 +6,7 @@
 :root {
   --transparent: transparent;
   --brand: #f85077;
+  --brandT: hsla(346, 92%, 64%, 0.35);
 
   --colors-blue: hsl(213, 96%, 56%);
   --colors-blue10: hsla(213, 96%, 56%, 0.1);

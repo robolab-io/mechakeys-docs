@@ -3,7 +3,7 @@
         <section id="" class="py-20 sm:py-[142px]" aria-label="Download section for MechaKeys">
             <Section class="">
                 <div class="flex mb-32">
-                    <div class="w-1/4 flex"></div>
+                    <div class="hidden w-1/4 sm:flex"></div>
                     <div class="flex flex-1 flex-col items-center justify-center sm:items-start sm:justify-end">
                         <h1 class="max-w-4xl text-4xl font-extrabold tracking-tight sm:text-6xl text-center mb-6">Changelog
                         </h1>

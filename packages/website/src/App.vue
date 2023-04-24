@@ -1,5 +1,5 @@
 <template>
-  <video class="lobbyVideo" src="https://s3.amazonaws.com/labs.robolab.io/drive/ui/ppbg_s.mp4" autoplay muted loop></video>
+  
   <Header />
   <RouterView v-slot="{ Component }">
     <transition name="slide-fade" mode="out-in">
@@ -16,7 +16,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 
-<style scoped>
+<style>
 .slide-fade-enter-active {
   transition: all 0.22s cubic-bezier(0,.99,.34,1)
 }
@@ -32,16 +32,12 @@ import { RouterLink, RouterView } from 'vue-router'
   opacity: 0;
 }
 
-.lobbyVideo {
-    position: fixed;
-    inset: 0;
-    width: 100vw;
-    height: 100vh;
-    opacity: .08;
-    object-fit: cover;
-    mix-blend-mode: lighten;
-    z-index: 0;
-    pointer-events: none;
-    user-select: none;
+@keyframes bounce-img {
+  0%, 100% {
+    transform: translateY(12px);
+  }
+  50% {
+    transform: none;
+  }
 }
 </style>

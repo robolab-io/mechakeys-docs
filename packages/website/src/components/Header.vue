@@ -9,7 +9,7 @@
 
                 <div class="gap-8 items-center flex">
                     <a class="justify-center items-center hidden sm:flex"
-                        href="https://github.com/robolab-io/mechakeys-app" aria-label="github" target="_blank"
+                        href="https://github.com/robolab-io" aria-label="github" target="_blank"
                         rel="noopener">
                         GitHub
                     </a>
