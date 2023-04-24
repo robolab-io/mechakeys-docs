@@ -1,5 +1,4 @@
 <template>
-  
   <Header />
   <RouterView v-slot="{ Component }">
     <transition name="slide-fade" mode="out-in">
@@ -13,16 +12,23 @@
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 import { RouterLink, RouterView } from 'vue-router'
+
+import { inject } from '@vercel/analytics';
+import { onMounted } from 'vue';
+ 
+onMounted(() => {
+  inject()
+})
 </script>
 
 
 <style>
 .slide-fade-enter-active {
-  transition: all 0.22s cubic-bezier(0,.99,.34,1)
+  transition: all 0.22s cubic-bezier(0, .99, .34, 1)
 }
 
 .slide-fade-leave-active {
-  transition: all 0.22s cubic-bezier(0,.99,.34,1)
+  transition: all 0.22s cubic-bezier(0, .99, .34, 1)
 }
 
 .slide-fade-enter-from,
@@ -33,9 +39,12 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 @keyframes bounce-img {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(12px);
   }
+
   50% {
     transform: none;
   }

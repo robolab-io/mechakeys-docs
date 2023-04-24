@@ -4,5 +4,8 @@
   "workspaces": [
     "packages/*",
     "docs/*"
-  ]
-}
+  ],
+  "scripts": {
+    "website:dev": "npm run dev --workspace=mechakeys-website"
+  }
+} 
