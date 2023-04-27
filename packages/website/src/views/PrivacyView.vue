@@ -1,5 +1,5 @@
 <template>
-    <main class="">
+    <main class="flex-1">
         <div class="max-w-7xl h-full mx-auto leading-7 px-8">
             <h1 class="mb-8 text-4xl font-extrabold tracking-tight sm:text-4xl">Privacy Policy</h1>
             We do not sell your personal information. That's our policy in one sentence. No information provided or

@@ -154,6 +154,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body, #app {
+  display: flex;
+  flex-direction: column;
+}
+
+#app {
+  flex: 1;
+}
+
 ::selection {
   background: var(--brand);
   color: white;

@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="flex-1">
         <section id="download-page" class="py-20 sm:py-[142px]" aria-label="Download section for MechaKeys">
             <Section class="">
                 <h1 class="mx-auto max-w-4xl text-4xl font-extrabold tracking-tight sm:text-6xl text-center">Download
