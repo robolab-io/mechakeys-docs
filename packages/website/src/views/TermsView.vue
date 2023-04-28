@@ -4,7 +4,7 @@
             <h1 class="mb-8 text-4xl font-extrabold tracking-tight sm:text-4xl">Terms of Service</h1>
             You must be a minimum of 13 years of age to use our services.
             Accounts are entirely the responsibility of the user. Thus any activity performed by that account will be
-            attributed to the owner of the account, regardless of whether or not the activity was performaed by you, or any
+            attributed to the owner of the account, regardless of whether or not the activity was performed by you, or any
             other individual or entity that may be using the account. Robolab is not responsible nor liable for any activity
             that happens on user accounts.
             You agree that the information used to create your account on our services is accurate, current, and complete.
