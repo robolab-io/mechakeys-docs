@@ -4,6 +4,7 @@ import TermsView from '../views/TermsView.vue'
 import PrivacyView from '../views/PrivacyView.vue'
 import DownloadView from '../views/DownloadView.vue'
 import ChangelogView from '../views/ChangelogView.vue'
+import BrandingView from '../views/BrandingView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: '/changelog',
       name: 'changelog',
       component: ChangelogView
+    },
+    {
+      path: '/branding',
+      name: 'branding',
+      component: BrandingView
     },
     // {
     //   path: '/about',
