@@ -1,6 +1,6 @@
 <template>
     <main class="flex-1">
-        <div class="max-w-7xl h-full mx-auto leading-7 px-10">
+        <div class="max-w-7xl h-full mx-auto leading-7 px-12">
             <h1 class="mb-8 text-4xl font-extrabold tracking-tight sm:text-4xl whitespace-pre">MechaKeys Terms of Service</h1>
             <h2 class="mb-4 text-xl font-bold tracking-tight sm:text-2xl">Effective: May 18, 2023</h2>
             <h2 class="mb-16 text-xl font-bold tracking-tight sm:text-2xl">Last Updated: May 18, 2023</h2>

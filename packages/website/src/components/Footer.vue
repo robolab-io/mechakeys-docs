@@ -1,6 +1,6 @@
 <template>
     <footer class="bg-[var(--app-base6)]">
-        <footer class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <footer class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
             <!--  sm:flex-row-reverse sm:justify-between -->
             <div class="flex flex-col gap-4 sm:flex-row sm:items-center justify-between py-8">
                 <p class="opacity-40 text-xs mb-2 sm:mb-0">
