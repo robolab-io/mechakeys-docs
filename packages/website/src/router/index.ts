@@ -5,6 +5,8 @@ import PrivacyView from '../views/PrivacyView.vue'
 import DownloadView from '../views/DownloadView.vue'
 import ChangelogView from '../views/ChangelogView.vue'
 import BrandingView from '../views/BrandingView.vue'
+import SupportView from '../views/SupportView.vue'
+import TopicsView from '../views/SupportTopicView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -39,6 +41,17 @@ const router = createRouter({
       name: 'branding',
       component: BrandingView
     },
+	{
+		path: '/support',
+		name: 'support',
+		component: SupportView
+	},
+	{
+		path: '/topics/:topicId',
+		name: 'topics',
+		component: TopicsView,
+		props: true
+	},
     // {
     //   path: '/about',
     //   name: 'about',
