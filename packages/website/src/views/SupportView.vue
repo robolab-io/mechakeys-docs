@@ -16,7 +16,7 @@
 				</div>
 
 				<div v-if="filteredAccountHelp.topAnswer" class="mt-4 mb-16">
-					<section class="mx-auto mt-16 text-2xl tracking-tight text-slate-300">Top Answer</section>
+					<section class="mx-auto mt-8 text-2xl tracking-tight text-slate-300">Top Answer</section>
 					<p class="mt-6 text-lg tracking-tight text-slate-300">Based on your search and number of matches</p>
 					<div
 						class="highlight-section mx-auto mt-6 mb-8 text-lg tracking-tight text-slate-300 p-8 bg-[var(--app-base2)] rounded-2xl border-solid border-[2px] border-[var(--borders-base2)]">
