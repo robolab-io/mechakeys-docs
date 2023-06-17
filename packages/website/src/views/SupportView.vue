@@ -3,7 +3,7 @@
 		<section id="support-page" class="py-20 sm:py-[48px]" aria-label="Support section for MechaKeys">
 			<Section class="">
 				<div class="flex flex-col items-center justify-between">
-					<h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight sm:text-3xl flex items-center">Help Center
+					<h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight flex items-center">Help Center
 					</h1>
 					<p class="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-300 text-center">We've got your back
 						for all of your MechaKeys needs. Use the search box below to find what you need, or join us on <a

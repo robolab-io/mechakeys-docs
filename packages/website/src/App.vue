@@ -1,52 +1,66 @@
 <template>
-  <Header />
-  <RouterView v-slot="{ Component }">
-    <transition name="slide-fade" mode="out-in">
-      <component :is="Component" />
-    </transition>
-  </RouterView>
-  <Footer />
+	<div class="contents" :class="{ [page]: true }">
+		<Header />
+		<RouterView v-slot="{ Component }">
+			<transition name="slide-fade" mode="out-in">
+				<component :is="Component" />
+			</transition>
+		</RouterView>
+		<Footer />
+	</div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router'
 
 import { inject } from '@vercel/analytics';
-import { onMounted } from 'vue';
- 
+import { onMounted, computed } from 'vue';
+
+const [route] = [useRoute()]
+// eslint-disable-next-line no-undef
+let page = computed(() => route.fullPath.split('/')[1])
+
 onMounted(() => {
-  inject()
+	inject()
 })
 </script>
 
 
 <style>
 .slide-fade-enter-active {
-  transition: all 0.22s cubic-bezier(0, .99, .34, 1)
+	transition: all 0.22s cubic-bezier(0, .99, .34, 1)
 }
 
 .slide-fade-leave-active {
-  transition: all 0.22s cubic-bezier(0, .99, .34, 1)
+	transition: all 0.22s cubic-bezier(0, .99, .34, 1)
 }
 
 .slide-fade-enter-from,
 .slide-fade-leave-to {
-  /* transform: translateY(20px) scale(0.9); */
-  transform: translateY(8px);
-  opacity: 0;
+	/* transform: translateY(20px) scale(0.9); */
+	transform: translateY(8px);
+	opacity: 0;
 }
 
 @keyframes bounce-img {
 
-  0%,
-  100% {
-    transform: translateY(12px);
-  }
+	0%,
+	100% {
+		transform: translateY(12px);
+	}
 
-  50% {
-    transform: none;
-  }
+	50% {
+		transform: none;
+	}
+}
+
+.support header {
+	display: none;
+}
+
+.support footer {
+	display: none;
 }
 </style>
