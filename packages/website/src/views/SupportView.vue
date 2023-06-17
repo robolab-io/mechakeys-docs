@@ -1,6 +1,6 @@
 <template>
 	<main class="flex-1">
-		<section id="support-page" class="py-20 sm:py-[48px]" aria-label="Support section for MechaKeys">
+		<section id="support-page" class="py-20 sm:py-[24px]" aria-label="Support section for MechaKeys">
 			<Section class="">
 				<div class="flex flex-col items-center justify-between">
 					<h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight flex items-center">Help Center
