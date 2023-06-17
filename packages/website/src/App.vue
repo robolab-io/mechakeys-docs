@@ -1,5 +1,5 @@
 <template>
-	<div class="contents" :class="{ [page]: true }">
+	<div class="page-bg contents" :class="{ [page]: true }">
 		<Header />
 		<RouterView v-slot="{ Component }">
 			<transition name="slide-fade" mode="out-in">
@@ -91,12 +91,12 @@ onMounted(() => {
   ::-webkit-scrollbar-corner {
     background: transparent;
   }
-
-  .support main {
-	background: var(--modalBody, var(--app-base3))
+  
+  .page-bg {
+	background: var(--app-base6);
   }
 
-  html:has(.support), body:has(.support) {
+  .page-bg.support {
 	background: var(--modalBody, var(--app-base3))
   }
 </style>

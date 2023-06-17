@@ -138,7 +138,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, d
 
 html, body {
   font-family: 'Karla', sans-serif;
-  background: var(--app-base6);
+  /* background: var(--app-base6); */
   color: var(--app-fore11);
 
   height: 100%;
