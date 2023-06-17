@@ -326,7 +326,7 @@ onMounted(() => {
 	color: revert !important;
 }
 
-details::focus, summary::focus, details::active, summary::active {
+details:focus, summary:focus, details:active, summary:active {
 	outline: none;
 	border: 0px solid transparent;
 }
