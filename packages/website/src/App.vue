@@ -95,4 +95,8 @@ onMounted(() => {
   .support main {
 	background: var(--modalBody, var(--app-base3))
   }
+
+  html:has(.support), body:has(.support) {
+	background: var(--modalBody, var(--app-base3))
+  }
 </style>
