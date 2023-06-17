@@ -40,7 +40,7 @@
 									v-html="highlightText(h.topic, 'topic')"></span>
 							</summary>
 							<div class="mt-4 select-none leading-8 mb-4" v-html="highlightText(h.answer, 'answer')"></div>
-							<a :href="'#accounthelp-' + i" class="px-4 py-2 bg-green-500 rounded-full select-none text-black z-10 text-sm font-bold pointer-events-auto" @click="handleAcctCopyLink(i)">Copy Link</a>
+							<!-- <a :href="'#accounthelp-' + i" class="px-4 py-2 bg-green-500 rounded-full select-none text-black z-10 text-sm font-bold pointer-events-auto" @click="handleAcctCopyLink(i)">Copy Link</a> -->
 						</details>
 					</div>
 				</div>
@@ -57,7 +57,7 @@
 									v-html="highlightText(h.topic, 'topic')"></span>
 							</summary>
 							<div class="mt-4 select-none leading-8 mb-4" v-html="highlightText(h.answer, 'answer')"></div>
-							<a :href="'#apphelp-' + i" class="px-4 py-2 bg-green-500 rounded-full select-none text-black z-10 text-sm font-bold pointer-events-auto">Copy Link</a>
+							<!-- <a :href="'#apphelp-' + i" class="px-4 py-2 bg-green-500 rounded-full select-none text-black z-10 text-sm font-bold pointer-events-auto">Copy Link</a> -->
 						</details>
 					</div>
 				</div>
