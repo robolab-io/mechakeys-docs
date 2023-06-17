@@ -1,5 +1,5 @@
 <template>
-	<main class="flex-1">
+	<main class="flex-1 select-none">
 		<section id="support-page" class="py-[24px]" aria-label="Support section for MechaKeys">
 			<Section class="">
 				<div class="flex flex-col items-center justify-between">
