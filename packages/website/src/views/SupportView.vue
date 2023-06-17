@@ -138,7 +138,7 @@ const appHelp = [
 							class="text-[var(--colors-blue)]" href="https://discord.robolab.io" aria-label="github"
 							target="_blank" rel="noopener">
 							Discord
-						</a> and send us your mecha.log and mecha.store files via Settings > Advanced.`
+						</a> and send us your mecha.log and mecha.store files via Settings > Advanced. <span aria-hidden="true" class="!hidden">soundpack lost, keypack lost, mousepack lost</span>`
 	},
 	{
 		topic: `I bought something, but I want a refund`,
