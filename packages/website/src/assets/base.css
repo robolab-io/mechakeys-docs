@@ -198,7 +198,8 @@ body, #app {
 
   .genericTextInput:focus {
     border-color: var(--input-text-active-b);
-    color: var(--input-text-active-c)
+    color: var(--input-text-active-c);
+	outline: none;
   }
 
   ::placeholder {

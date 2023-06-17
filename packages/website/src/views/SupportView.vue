@@ -19,7 +19,7 @@
 					<section class="mx-auto mt-16 text-2xl tracking-tight text-slate-300">Top Answer</section>
 					<p class="mt-6 text-lg tracking-tight text-slate-300">Based on your search and number of matches</p>
 					<div
-						class="highlight-section mx-auto mt-6 mb-8 text-lg tracking-tight text-slate-300 p-8 bg-[var(--app-base2)] rounded-2xl border-solid border-[1px] border-[var(--borders-base1)]">
+						class="highlight-section mx-auto mt-6 mb-8 text-lg tracking-tight text-slate-300 p-8 bg-[var(--app-base2)] rounded-2xl border-solid border-[2px] border-[var(--borders-base2)]">
 						<span class="text-slate-100 text-lg font-bold"
 							v-html="highlightText(filteredAccountHelp.topAnswer.topic, 'topic')"></span>
 						<div class="mt-4" v-html="highlightText(filteredAccountHelp.topAnswer.answer, 'answer')"></div>
@@ -29,13 +29,13 @@
 				</div>
 
 				<div v-if="filteredAccountHelp.accountHelp.length > 0">
-					<p class="mx-auto mt-16 text-2xl tracking-tight text-slate-300">My MechaKeys Account</p>
+					<p class="mx-auto mt-8 text-2xl tracking-tight text-slate-300">My MechaKeys Account</p>
 
 					<div
-						class="highlight-section mx-auto mt-6 mb-8 text-lg tracking-tight text-slate-300 p-4 bg-[var(--app-base2)] rounded-2xl border-solid border-[1px] border-[var(--borders-base1)]">
+						class="highlight-section mx-auto mt-6 mb-8 text-lg tracking-tight text-slate-300 p-4 bg-[var(--app-base2)] rounded-2xl border-solid border-[2px] border-[var(--borders-base2)]">
 						<details v-for="(h, i) in filteredAccountHelp.accountHelp" :key="'help-' + i" class="p-4"
 							 :id="'accounthelp-' + i" :open="h.isExpanded">
-							<summary class="cursor-pointer leading-10" @click="toggleExpansion(h)">
+							<summary class="cursor-pointer" @click="toggleExpansion(h)">
 								<span class="ml-2 text-slate-100 text-lg font-bold"
 									v-html="highlightText(h.topic, 'topic')"></span>
 							</summary>
@@ -46,13 +46,13 @@
 				</div>
 
 				<div v-if="filteredAccountHelp.appHelp.length > 0">
-					<p class="mx-auto mt-16 text-2xl tracking-tight text-slate-300">MechaKeys App</p>
+					<p class="mx-auto mt-8 text-2xl tracking-tight text-slate-300">MechaKeys App</p>
 
 					<div
-						class="highlight-section mx-auto mt-6 mb-8 text-lg tracking-tight text-slate-300 p-4 bg-[var(--app-base2)] rounded-2xl border-solid border-[1px] border-[var(--borders-base1)]">
+						class="highlight-section mx-auto mt-6 mb-8 text-lg tracking-tight text-slate-300 p-4 bg-[var(--app-base2)] rounded-2xl border-solid border-[2px] border-[var(--borders-base2)]">
 						<details v-for="(h, i) in filteredAccountHelp.appHelp" :key="'help-' + i" class="p-4"
 							:id="'apphelp-' + i" :open="h.isExpanded">
-							<summary class="cursor-pointer leading-10" @click="toggleExpansion(h)">
+							<summary class="cursor-pointer" @click="toggleExpansion(h)">
 								<span class="ml-2 text-slate-100 text-lg font-bold"
 									v-html="highlightText(h.topic, 'topic')"></span>
 							</summary>
@@ -324,5 +324,10 @@ onMounted(() => {
 	transition: 0.2s ease;
 	background-color: revert !important;
 	color: revert !important;
+}
+
+details::focus, summary::focus, details::active, summary::active {
+	outline: none;
+	border: 0px solid transparent;
 }
 </style>

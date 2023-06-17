@@ -91,4 +91,8 @@ onMounted(() => {
   ::-webkit-scrollbar-corner {
     background: transparent;
   }
+
+  .support main {
+	background: var(--modalBody, var(--app-base3))
+  }
 </style>
