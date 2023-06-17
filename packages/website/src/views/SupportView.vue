@@ -11,7 +11,7 @@
 							target="_blank" rel="noopener">
 							Discord
 						</a> to chat.</p> -->
-					<input class="genericTextInput mt-8 max-w-2xl w-full sticky top-0" type="text" v-model="searchQuery"
+					<input class="genericTextInput max-w-2xl w-full sticky" type="text" v-model="searchQuery"
 						placeholder="Search" />
 				</div>
 
@@ -175,10 +175,6 @@ const appHelp = [
 	{
 		topic: `I can't hear MechaKeys while in game`,
 		answer: `Quit MechaKeys fully, then try running MechaKeys as administrator (Windows). This will allow us to listen to your keystrokes even when a game or app hijacks your keyboard in other manners.`
-	},
-	{
-		topic: ``,
-		answer: ``
 	},
 ];
 
