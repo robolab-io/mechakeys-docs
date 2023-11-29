@@ -81,9 +81,7 @@ import { ref, computed, watch, onMounted } from 'vue';
 const accountHelp = [
 	{
 		topic: 'I forgot my username',
-		answer: `
-					You can request to get your username to your registered account's email address. On the login screen, find the link called "Request Username" and follow the prompts, then check your email.
-					`
+		answer: `You can request to get your username to your registered account's email address. On the login screen, find the link called "Request Username" and follow the prompts, then check your email.`
 	},
 	{
 		topic: 'I forgot my password',
@@ -113,20 +111,24 @@ const appHelp = [
 		answer: `In general, you should make sure you have at least 200MB of storage on your PC to ensure MechaKeys is able to install soundpacks correctly. MechaKeys also requires about 250MB of RAM while you're using the UI. Closing the app to the tray will minimize resource usage.`
 	},
 	{
+		topic: `What's the difference between "keystrokes" and "keycaps"?`,
+		answer: `Keystrokes are the amount of times you click and type with MechaKeys open. Keycaps are the virtual currency you use to purchase new soundpacks, mousepacks, and avatars.`
+	},
+	{
 		topic: `My keystrokes don't match the weekly leaderboard`,
 		answer: `Leaderboard keystrokes are recorded during the week. If you had 100,000 keystrokes before the week started, and you get 50,000 more when a new leaderboard starts, only the 50,000 will be counted towards the leaderboard, not your lifetime total of 150,000. Please note that the leaderboard updates asynchronously from your actual sync times, meaning it may take up to an hour for your keystrokes to be reflected in the leaderboard's counts.`
 	},
 	{
 		topic: `What are offlineStrokes?`,
-		answer: `offlineStrokes are keystrokes that are counted when you use the app while disconnected from the internet for an extended period of time, or when you deliberately disable syncing via Settings. offlineStrokes are not synced and do not count towards achievements.`
+		answer: `Please note that MechaKeys versions above 2.3.7 renamed this to "Invalid Keystrokes". offlineStrokes are keystrokes that are counted when you use the app while disconnected from the internet for an extended period of time, or when you deliberately disable syncing via Settings. offlineStrokes are not synced and do not count towards achievements.`
 	},
 	{
 		topic: `What are deltaStrokes?`,
-		answer: `deltaStrokes are keystrokes that have been counted but are not synced to MechaKeys' servers yet. This means they won't be reflected in the weekly leaderboard or the Discord bot. You can always sync using the Sync button in the topbar of the app.`
+		answer: `Please note that MechaKeys versions above 2.3.7 renamed this to "Unsynced Keystrokes". deltaStrokes are keystrokes that have been counted but are not synced to MechaKeys' servers yet. This means they won't be reflected in the weekly leaderboard or the Discord bot until you sync them with our servers. You can sync your keystrokes using the Sync button in the topbar of the app.`
 	},
 	{
 		topic: `I have x keystrokes, but I can't claim the achievement for it`,
-		answer: `Please check the You page to see if you have offlineStrokes. You can refer to the help article above to learn what offlineStrokes are and why they don't count towards your achievement. Ensure that you have synced before trying to claim the achievement.`
+		answer: `Please check the You page to see if you have offlineStrokes. You can refer to the help article above to learn what offlineStrokes are and why they don't count towards your achievement. Ensure that you have synced before trying to claim the achievement. If you're sure that you've synced but you're receiving and error while claiming, try again within 15 minutes.`
 	},
 	{
 		topic: `I have x XP on Discord, but I can't claim the achievement for it`,
@@ -174,7 +176,7 @@ const appHelp = [
 	},
 	{
 		topic: `I can't hear MechaKeys while in game`,
-		answer: `Quit MechaKeys fully, then try running MechaKeys as administrator (Windows). This will allow us to listen to your keystrokes even when a game or app hijacks your keyboard in other manners.`
+		answer: `Quit MechaKeys fully, then try running MechaKeys as administrator (Windows). Find MechaKeys in your Start Menu, right-click, and select "Run As Administrator". This will allow us to listen to your keystrokes even when a game or app hijacks your keyboard in other manners.`
 	},
 ];
 
