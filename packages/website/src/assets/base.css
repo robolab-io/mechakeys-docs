@@ -138,7 +138,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, d
 
 html, body {
   font-family: 'Karla', sans-serif;
-  background: var(--app-base6);
+  background: var(--app-base3);
   color: var(--app-fore11);
 
   height: 100%;
@@ -167,3 +167,43 @@ body, #app {
   background: var(--brand);
   color: white;
 }
+
+  :root {
+    --input-text-error-c: var(--alert, var(--colors-red));
+    --input-text-label-c: var(--textPrimary, var(--app-fore11));
+
+    --input-text-bg: var(--contentInput, var(--app-base2));
+    --input-text-c: var(--inputTextColor);
+    --input-text-b: var(--bdr,var(--borders-base1));
+
+    --input-text-active-c: var(--textPrimary, var(--app-fore11));
+    --input-text-active-b: var(--bdrBright, var(--borders-base2));
+
+    --input-text-placeholder: var(--textSecondary, var(--app-fore8));
+
+    --input-text-error-icon-fill: var(--red, var(--colors-red));
+  }
+
+.genericTextInput {
+    padding: 8px 8px;
+    margin: 4px 0px 0px 0px;
+    box-sizing: border-box;
+    background: var(--input-text-bg);
+    color: var(--input-text-c);
+    border: 2px solid var(--input-text-b);
+    transition: 0.2s ease;
+    outline: none;
+    border-radius: 12px;
+  }
+
+  .genericTextInput:focus {
+    border-color: var(--input-text-active-b);
+    color: var(--input-text-active-c);
+	outline: none;
+  }
+
+  ::placeholder {
+    color: var(--input-text-placeholder);
+    transition: 0.2s ease;
+    opacity: 35%;
+  }

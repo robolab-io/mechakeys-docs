@@ -13,6 +13,9 @@
                         rel="noopener">
                         GitHub
                     </a> -->
+                    <RouterLink class="flex items-center" to="/support">
+                        <div class="hidden sm:block font-bold text-sm">Support</div>
+                    </RouterLink>
                     <a class="justify-center items-center hidden sm:flex font-bold text-sm"
                         href="https://discord.robolab.io" aria-label="github" target="_blank"
                         rel="noopener">
