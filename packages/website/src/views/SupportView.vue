@@ -131,6 +131,10 @@ const appHelp = [
 		answer: `Please check the You page to see if you have offlineStrokes. You can refer to the help article above to learn what offlineStrokes are and why they don't count towards your achievement. Ensure that you have synced before trying to claim the achievement. If you're sure that you've synced but you're receiving and error while claiming, try again within 15 minutes.`
 	},
 	{
+		topic: `How do I get XP on Discord?`,
+		answer: `You can get XP by talking in the #general channel, as well as using certain commands like /daily and /pray. A lot of activity in the channel increases the amount of XP you get. There are also occasional minigames such as tumblebounce, which are hosted in #general by a staff member.`
+	},
+	{
 		topic: `I have x XP on Discord, but I can't claim the achievement for it`,
 		answer: `Ensure that you have synced before trying to claim the achievement. You can also try fully quitting and reopening MechaKeys.`
 	},
